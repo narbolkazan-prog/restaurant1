@@ -228,3 +228,156 @@ body {
         padding: 10px 15px;
     }
 }
+
+
+/* Order Successful page */
+.success {
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+
+    width: 450px;
+    max-width: calc(100% - 60px);
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.success h1 {
+    margin-top: 0;
+    font-size: 36px;
+}
+
+.success p {
+    font-size: 20px;
+}
+
+.success h2 {
+    font-size: 26px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.success hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.success button {
+    padding: 12px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.success button:hover {
+    background: #333;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .success {
+        left: 15px;
+        width: calc(100% - 30px);
+        max-width: none;
+        padding: 20px;
+    }
+
+    .success h1 {
+        font-size: 28px;
+    }
+}
+
+
+.checkout {
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+
+    width: 330px;
+    max-width: calc(100% - 60px);
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.90);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.checkout h1 {
+    margin: 0 0 18px;
+    font-size: 28px;
+}
+
+.checkout form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.checkout label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.checkout input {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.checkout button,
+.checkout .back-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.checkout button:hover,
+.checkout .back-button:hover {
+    background: #333;
+    transform: scale(1.02);
+}
+
+.checkout .back-button {
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .checkout {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: calc(100% - 30px);
+        max-width: none;
+        margin: 25px auto;
+        padding: 18px;
+    }
+}
